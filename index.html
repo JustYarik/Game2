@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Project1</title>
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h3>1 2 3 4 5 6 7 </h3>
+
+<label class="text" for="cash" >Cash</label>
+<input class="input" type="text" id="cash" value="100">
+<br/>
+
+<div id="takeFromBank" >
+    <label for="bank">Bank</label>
+    <input class="input" type="text" id="bank" value="100">
+    <button class="nextTurn" onclick="takeFromBank()">Take in bank</button>
+</div>
+
+<br/>
+
+<div>
+    <label for="var1">Var1</label>
+    <input class="input" type="text" id="var1" value="102">
+    <input class="input"  type="text" id="rick1" value="">
+    <button class="var" id="pickvar1" onclick="pick('var1')">Take var1</button>
+</div>
+
+<br/>
+
+<div>
+    <label for="var2">Var2</label>
+    <input class="input" type="text" id="var2" value="100">
+    <input class="input" type="text" id="rick2" value="">
+    <button class="var" id="pickvar2" onclick="pick('var2')">Take var2</button>
+
+</div>
+
+<br/>
+
+<div id="oneMoreVariant" >
+    <label for="var3">Var3</label>
+    <input class="input" type="text" id="var3" value="100" >
+    <input class="input"  type="text" id="rick3" value="">
+    <button class="var" id="pickvar3" onclick="pick('var3')">Take var3</button>
+</div>
+
+<br/>
+
+<div>
+    <button class="generate" onclick="genetateRick()">Generate</button>
+    <button class="oneMore" onclick="oneMore()">One more</button>
+    <button class="nextTurn" onclick="nextTurn()">Next turn</button>
+</div>
+<p>Rick: Price : Profit </p>
+</body>
+</html>
